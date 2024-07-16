@@ -1,0 +1,85 @@
+:root {
+  font-family: 'Roboto';
+  color: #bebebe;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 70%;
+  background-color: #11071f;
+}
+
+h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+}
+
+
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.projectList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid black;
+  background-color: #280757;
+  width: 300px;
+  height: 250px;
+  border-radius: 15px;
+  transition: box-shadow 0.3s ease-in, transform 0.3s ease-in;
+  text-decoration: none;
+  color: white;
+}
+
+.projectCard-heading {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.projectCard-heading h3 {
+  flex: 1;
+  margin: 0px;
+}
+
+.projectCard-heading img {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.projectCard p {
+  font-size: 15px;
+  color: #bebebe;
+}
+
+
+.projectCard:hover {
+  box-shadow: -10px 5px 5px rgba(128, 183, 255, 0.5);
+  transform: translate(5px, -5px);
+}
